@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/bdar_gui_capture_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true">
+    <!--拍照 录制按钮滑动选择器-->
+    <com.baidu.ar.plugin.ui.CategoryView
+            android:id="@+id/bdar_capture_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"/>
+
+    <RelativeLayout
+            android:id="@+id/capture_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:layout_marginBottom="38dp">
+
+        <com.baidu.ar.ui.rotateview.RotateImageView
+                android:id="@+id/bdar_gui_capture_bg"
+                android:layout_width="@dimen/bdar_icon_video_wrapper_size"
+                android:layout_height="@dimen/bdar_icon_video_wrapper_size"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/bdar_drawable_capture_loading"/>
+        <!--录制进度条-->
+        <com.baidu.ar.ui.rotateview.RotateViewGroup
+                android:id="@+id/bdar_gui_capture_loading_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            <com.baidu.ar.plugin.ui.RoundProgressBar
+                    android:id="@+id/bdar_gui_capture_loading"
+                    android:layout_width="@dimen/bdar_icon_video_wrapper_round_size"
+                    android:layout_height="@dimen/bdar_icon_video_wrapper_round_size"/>
+        </com.baidu.ar.ui.rotateview.RotateViewGroup>
+
+        <com.baidu.ar.ui.rotateview.RotateImageView
+                android:id="@+id/bdar_gui_capture"
+                android:layout_width="@dimen/bdar_icon_video_size"
+                android:layout_height="@dimen/bdar_icon_video_size"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/bdar_drawable_btn_capture_selector"/>
+        <!--录制按钮中间的红点-->
+        <com.baidu.ar.ui.rotateview.RotateImageView
+                android:id="@+id/bdar_gui_record_flashing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/bdar_drawable_icon_record_flashing"/>
+    </RelativeLayout>
+
+
+
+    <!-- 录音 -->
+    <com.baidu.ar.ui.rotateview.RotateImageView
+            android:id="@+id/bdar_gui_record_audio"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="46dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/bdar_drawable_btn_close_record_audio_selector"
+            android:visibility="invisible"/>
+
+
+    <!-- 录音提示文字横屏状态显示 -->
+    <com.baidu.ar.ui.rotateview.RotateViewGroup
+            android:id="@+id/bdar_gui_record_audio_rotate_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bdar_gui_record_audio"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:visibility="invisible">
+        <TextView
+                android:id="@+id/bdar_record_audio_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bdar_text_color_white"
+                android:background="@drawable/bdar_drawable_bg_pop_right_bottom"
+                android:text="@string/bdar_click_to_stop_speak"/>
+    </com.baidu.ar.ui.rotateview.RotateViewGroup>
+</RelativeLayout>

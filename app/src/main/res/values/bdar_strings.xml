@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bdar_app_name">BaiduAr</string>
+    <string name="bdar_webview_reload">重新加载</string>
+    <string name="bdar_webview_error_tips">网络不给力，请稍后重试</string>
+    <string name="bdar_ar_case">AR案例展示</string>
+    <string name="bdar_ar_intro">AR简介帮助</string>
+    <string name="bdar_dialog_prompt_title">提示</string>
+    <string name="bdar_error_network_tips">网络不给力，是否立即重试？</string>
+    <string name="bdar_upload_error_network_tips">网络不给力，请稍后重试</string>
+    <string name="bdar_save_capture_picture_tips">图片已保存至本地相册</string>
+    <string name="bdar_error_download">资源下载失败</string>
+    <string name="bdar_error_unzip">资源解压失败</string>
+    <string name="bdar_error_json_parser">资源解析失败</string>
+    <string name="bdar_loading">正在加载...</string>
+    <string name="bdar_share">分享</string>
+    <string name="bdar_retry">重试</string>
+    <string name="bdar_cancel">取消</string>
+    <string name="bdar_ok">确定</string>
+    <string name="bdar_sdcard_disable">SD卡不可用或空间不足</string>
+    <string name="bdar_device_disable">抱歉，你的手机不支持</string>
+    <string name="bdar_non_wifi_tips">正在非WIFI网络下体验\n 可能会产生流量费用</string>
+    <string name="bdar_network_invalidate">网络不可用</string>
+    <string name="bdar_download_timeout_error">网络不给力，确定要继续等待吗？</string>
+    <string name="bdar_got">知道了</string>
+    <string name="bdar_sdk_version_unsupport_toolow">抱歉，当前版本不支持，请升级版本</string>
+    <string name="bdar_sdk_spirit_prize_draw_abnormal">手慢了，精灵逃走了，再玩一次吧~</string>
+    <string name="bdar_sdk_ar_track_target_not_finded">未找到扫描物，请重新对准</string>
+    <string name="bdar_settings">设置</string>
+    <string name="bdar_capture_pic">拍摄</string>
+    <string name="bdar_capture_video">录制</string>
+    <string name="bdar_video_recording_too_short">录制过短，请重新录制</string>
+    <string name="bdar_save_finish">已保存到相册</string>
+    <string name="bdar_save_fail">保存失败，该文件已被删除</string>
+    <string name="bdar_stop_record_toast">再按一次取消录制</string>
+    <string name="bdar_camera_permission_dialog_title">开启相机权限</string>
+    <string name="bdar_camera_permission_dialog_context">没有权限使用你的相机，请在设置中开启</string>
+    <string name="bdar_camera_permission_dialog_set">去设置</string>
+    <string name="bdar_camera_permission_dialog_ok">我知道了</string>
+    <string name="bdar_record_error">录制失败</string>
+    <string name="bdar_record_completing">正在生成视频...</string>
+    <string name="bdar_video_saving">正在保存视频...</string>
+    <string name="bdar_upload_error">上传失败</string>
+    <string name="bdar_audio_permission_dialog_title">是否录制有声视频</string>
+    <string name="bdar_audio_permission_dialog_context">将获取您的麦克风权限，以便录制有声视频</string>
+    <string name="bdar_more_help_url">https://dusee.baidu.com/static/site/pages/intro/index.html</string>
+    <string name="bdar_more_case_url">https://dusee.baidu.com/artrack/article/articlelist</string>
+    <string name="bdar_blacklist_default_url">https://dusee.baidu.com/static/site/pages/intro/ar_help.html</string>
+
+    <!-- slam 相关-->
+    <string name="bdar_find_perfect_plane">请寻找纹理丰富平面</string>
+    <string name="bdar_align_plane">请向下对准平面放置模型</string>
+    <string name="bdar_gesture_guide_btn_text">知道了</string>
+
+
+    <!--camera diglog 权限相关-->
+    <string name="bdar_open_camera_permision">开启相机权限</string>
+    <string name="bdar_open_camera_description_for_android_m_above">没有权限使用你的相机，\n请在设置中开启</string>
+    <string name="bdar_open_camera_description_for_android_m_under">没有权限使用你的相机，\n请在手机的“设置-权限管理-相机”中开启
+    </string>
+
+    <!--麦克风 diglog 权限相关-->
+    <string name="bdar_open_mic_permision">麦克风不可用</string>
+    <string name="bdar_mic_read_error">麦克风读取失败</string>
+    <string name="bdar_open_mic_description_for_android">请在"手机关机"或系统"设置"的权限管理中，开启%s访问麦克风权限</string>
+
+    <!--  不对单个权限做dialog 权限相关-->
+    <string name="bdar_all_permision">权限申请</string>
+    <string name="bdar_all_description_for_android_m_above">没有权限进行下一步操作，请在设置中开启</string>
+    <string name="bdar_all_description_for_android_m_under">没有权限进行下一步操作，请在手机的“设置-权限管理”中开启</string>
+
+    <string name="bdar_go_setting">去设置</string>
+    <string name="bdar_got_it">我知道了</string>
+
+    <string name="bdar_click_to_stop_speak">按一下停止说话</string>
+    <string name="bdar_click_to_open_speak">按一下开始说话</string>
+    <string name="bdar_speech_wait">请稍后</string>
+    <string name="bdar_voice_listening">正在聆听中...</string>
+    <string name="bdar_speech_error_timeout">没听清，请重说</string>
+    <string name="bdar_speech_error_unknow">没听懂，请重说</string>
+    <string name="bdar_speech_error_network">网络不给力，请检查网络设置</string>
+    <string name="bdar_speech_error_premission">请打开麦克风权限</string>
+    <string name="bdar_speech_error_other">操作失败，请稍后再重试</string>
+
+    <string name="bdar_manage_storage">你可以在“设置”中管理存储空间</string>
+    <string name="bdar_storage_space_is_almost_full">存储空间几乎已满</string>
+    <string name="bdar_click_to_rescan">点击这里重新扫描</string>
+
+    <string name="bdar_camera_switch_tip">点击切换前置摄像头</string>
+
+    <string name="bdar_not_recg_image">未识别到AR图片</string>
+    <string name="bdar_recg_error">出错啦</string>
+
+    <string name="bdar_sdk_version_low_for_box">此功能需要最新版本%s</string>
+    <string name="bdar_sdk_version_update_btn">更新</string>
+    <string name="bdar_sdk_version_update_market_tips">请选择要查看的市场软件</string>
+
+    <string name="bdar_recommend_view_more">查看更多案例</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bdar_toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bdar_shape_corner"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bdar_hint_paddingBottom"
+        android:paddingLeft="@dimen/bdar_hint_paddingLeft"
+        android:paddingRight="@dimen/bdar_hint_paddingRight"
+        android:paddingTop="@dimen/bdar_hint_paddingTop"
+        android:textColor="@android:color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

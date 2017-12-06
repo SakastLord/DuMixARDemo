@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/bdar_camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 返回按钮 -->
+    <com.baidu.ar.ui.rotateview.RotateImageView
+        android:id="@+id/bdar_titlebar_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bdar_drawable_btn_back_selector" />
+
+    <!-- 显示ar的界面 -->
+    <FrameLayout
+        android:id="@+id/bdar_ar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 扫描图,提示界面 -->
+    <include layout="@layout/bdar_layout_arhost" />
+
+    <!-- 显示ar的界面 -->
+    <FrameLayout
+        android:id="@+id/bdar_ar_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<com.baidu.ar.plugin.ui.ScanView
+				android:id="@+id/bdar_gui_scan_view"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="gone" />
+
+
+		<RelativeLayout
+				android:id="@+id/bdar_operate_group"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="10dp">
+
+			<com.baidu.ar.ui.rotateview.RotateImageView
+					android:id="@+id/bdar_titlebar_flash"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:scaleType="centerInside"
+					android:src="@drawable/bdar_drawable_btn_flash_disable_selector"/>
+
+			<com.baidu.ar.ui.rotateview.RotateImageView
+					android:id="@+id/bdar_titlebar_camera"
+					android:layout_width="35dp"
+					android:layout_height="35dp"
+					android:layout_marginLeft="70dp"
+					android:scaleType="centerInside"
+					android:src="@drawable/bdar_drawable_btn_camera_selector"
+					android:visibility="invisible"/>
+		</RelativeLayout>
+
+
+		<!-- 重置 -->
+		<com.baidu.ar.ui.rotateview.RotateImageView
+				android:id="@+id/bdar_gui_reset"
+				android:layout_width="35dp"
+				android:layout_height="35dp"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_marginLeft="16dp"
+				android:layout_marginBottom="46dp"
+				android:scaleType="centerInside"
+				android:src="@drawable/bdar_drawable_btn_replay_selector"
+				android:visibility="invisible"/>
+		<!-- 重置引导提示 -->
+		<com.baidu.ar.ui.rotateview.RotateViewGroup
+				android:id="@+id/bdar_gui_reset_guide_frame"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@id/bdar_gui_reset"
+				android:layout_marginBottom="5dp"
+				android:layout_marginLeft="16dp"
+				android:visibility="gone">
+			<TextView
+					android:id="@+id/bdar_gui_reset_guide"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/bdar_drawable_bg_pop_left_bottom"
+					android:textColor="@color/bdar_text_color_white"
+					android:maxLines="1"
+					android:text="@string/bdar_click_to_rescan"/>
+		</com.baidu.ar.ui.rotateview.RotateViewGroup>
+
+
+
+		<com.baidu.ar.ui.rotateview.RotateViewGroup
+				android:id="@+id/bdar_id_camera_switch_tips_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/bdar_camera_tip_margin_left_portrait"
+				android:layout_marginTop="@dimen/bdar_camera_tip_margin_top"
+				android:layout_below="@id/bdar_operate_group"
+				android:visibility="invisible">
+			<TextView android:id="@+id/bdar_id_camera_switch_tips"
+					  android:layout_width="wrap_content"
+					  android:layout_height="wrap_content"
+					  android:gravity="center"
+					  android:layout_gravity="center"
+					  android:singleLine="true"
+					  android:maxLines="1"
+					  android:textColor="@android:color/white"
+					  android:text="@string/bdar_camera_switch_tip"
+					  android:background="@drawable/bdar_drawable_bg_pop_center_top"
+					  android:textSize="14dp"/>
+		</com.baidu.ar.ui.rotateview.RotateViewGroup>
+
+	</RelativeLayout>
+
+</RelativeLayout>

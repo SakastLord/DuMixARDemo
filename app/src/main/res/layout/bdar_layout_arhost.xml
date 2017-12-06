@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+
+
+
+	<com.baidu.ar.ui.rotateview.RotateViewGroup
+			android:id="@+id/bdar_gui_loading_overtime_tips_group"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom|center_horizontal"
+			android:layout_marginBottom="90dp"
+			android:background="@android:color/transparent">
+
+
+		<com.baidu.ar.host.ui.ToastView
+				android:id="@+id/bdar_gui_loading_overtime_tips_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/bdar_shape_corner"
+				android:gravity="center"
+				android:paddingBottom="@dimen/bdar_hint_paddingBottom"
+				android:paddingLeft="@dimen/bdar_hint_paddingLeft"
+				android:paddingRight="@dimen/bdar_hint_paddingRight"
+				android:paddingTop="@dimen/bdar_hint_paddingTop"
+				android:text="时间有点长，请耐心等待下"
+				android:textColor="@android:color/white"
+				android:textSize="14dp"
+				android:visibility="gone"/>
+	</com.baidu.ar.ui.rotateview.RotateViewGroup>
+
+	<com.baidu.ar.ui.rotateview.RotateViewGroup
+			android:id="@+id/bdar_id_loading_group"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<com.baidu.ar.host.ui.LoadingView
+				android:id="@+id/bdar_id_loading"
+				android:layout_width="match_parent"
+				android:visibility="gone"
+				android:layout_height="match_parent"/>
+	</com.baidu.ar.ui.rotateview.RotateViewGroup>
+</FrameLayout>

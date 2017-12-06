@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+            android:id="@+id/intro_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    <View
+            android:id="@+id/line"
+            android:background="#C0C0C0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/intro_title"/>
+    <TextView
+            android:id="@+id/intro_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_below="@id/line"
+            android:textSize="18sp"/>
+
+    <Button
+            android:id="@+id/call_ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#00b4d4"
+            android:textColor="#ffffff"
+            android:text="调起AR"/>
+
+</RelativeLayout>

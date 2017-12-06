@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/bdar_layout_speech"></include>
+
+    <!-- 拍屏/录屏布局 -->
+    <include layout="@layout/bdar_layout_capture"/>
+
+    <!-- 拍屏按钮 -->
+    <com.baidu.ar.ui.rotateview.RotateImageView
+            android:id="@+id/bdar_gui_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/bdar_drawable_btn_capture_selector"
+            android:visibility="gone"/>
+
+    <!-- 提示性layout -->
+    <include layout="@layout/bdar_layout_prompt"/>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="bdar_menu_item_background_press">#33000000</drawable>
+    <drawable name="bdar_transparent_drawable">#00ffffff</drawable>
+
+    <!-- dialog -->
+    <color name="bdar_dialog_night_text">#999999</color>
+    <color name="bdar_dialog_night_bg">#1D1D1D</color>
+
+    <drawable name="bdar_dialog_night_drawable_bg">#1D1D1D</drawable>
+    <drawable name="bdar_dialog_night_drawable_bg_pressed">#2d2d2d</drawable>
+
+    <color name="bdar_dialog_blue_line">#308EF0</color>
+    <color name="bdar_dialog_gray_line">#333333</color>
+    <color name="bdar_dialog_content">#222222</color>
+    <color name="bdar_dialog_gray">#e0e0e0</color>
+
+    <drawable name="bdar_dialog_btn_bg_pressed_day">#f2f2f2</drawable>
+    <drawable name="bdar_dialog_btn_bg_pressed_night">#2a2a2d</drawable>
+
+    <color name="bdar_dialog_title_text_color">#333333</color>
+    <color name="bdar_dialog_message_text_color">#666666</color>
+
+    <color name="bdar_gesture_guide_btn_text_color">#433333</color>
+    <color name="bdar_gesture_guide_btn_color">#f7f7f7</color>
+    <color name="bdar_toast_bg_color">#77000000</color>
+    <color name="bdar_capture_btn_pressed">#d2563e</color>
+
+    <color name="bdar_dialog_btn_bg">#3c76ff</color>
+
+    <color name="bdar_dialog_bg">#ffffff</color>
+    <color name="bdar_text_color_white">#ffffff</color>
+
+    <!-- case推荐 -->
+    <color name="bdar_recommend_panel">#e0000000</color>
+</resources>

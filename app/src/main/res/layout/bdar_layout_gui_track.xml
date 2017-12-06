@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/bdar_titlebar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include layout="@layout/bdar_layout_speech" />
+
+
+    <include
+        layout="@layout/bdar_layout_capture" />
+
+    <!-- 透明层用于获取touch事件，隐藏popemnu -->
+    <View
+        android:id="@+id/bdar_transparent_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bdar_titlebar_flash" />
+
+
+    <!-- 触发图显示层 -->
+    <com.baidu.ar.ui.rotateview.RotateImageView
+        android:id="@+id/bdar_gui_image_trigger_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <!-- 以下为弹出菜单layout -->
+    <RelativeLayout
+        android:id="@+id/bdar_titlebar_more_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="48dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/bdar_titlebar_arrow"
+            android:layout_width="12dp"
+            android:layout_height="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bdar_drawable_icon_direction_arrow" />
+
+        <com.baidu.ar.ui.rotateview.RotateViewGroup
+            android:id="@+id/bdar_menu_bg_pop_window"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/bdar_titlebar_arrow"
+            android:background="@drawable/bdar_drawable_bg_pop_window">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/bdar_popmenu_item1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bdar_drawable_pop_window_item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bdar_drawable_icon_menu_goodcase" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="21dp"
+                        android:text="@string/bdar_ar_case"
+                        android:textColor="#ffffffff"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#aa454a50" />
+
+                <LinearLayout
+                    android:id="@+id/bdar_popmenu_item2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bdar_drawable_pop_window_item_selector"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bdar_drawable_icon_menu_help" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="21dp"
+                        android:text="@string/bdar_ar_intro"
+                        android:textColor="#ffffffff"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.baidu.ar.ui.rotateview.RotateViewGroup>
+    </RelativeLayout>
+
+    <include layout="@layout/bdar_layout_prompt" />
+</RelativeLayout>
